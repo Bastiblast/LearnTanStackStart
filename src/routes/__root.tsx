@@ -33,11 +33,11 @@ export const Route = createRootRoute({
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className='h-min-[100vp]'>
-      <head>
+    <html lang="en" className='box-border min-h-screen relative overflow-y-auto'>
+      <head className=''>
         <HeadContent />
       </head>
-      <body>
+      <body className='min-h-screen flex-1 flex-col'>
         <Header />
         {children}
         <TanStackDevtools
